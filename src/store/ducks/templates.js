@@ -1,14 +1,8 @@
 import Immutable from 'seamless-immutable';
+import { createActions, createReducer } from 'reduxsauce';
 
-export const Types = {};
+const { Types, Creators } = createActions({});
 
 const INITIAL_STATE = Immutable({});
 
-export default function Templates(state = INITIAL_STATE, action) {
-  switch (action.type) {
-    default:
-      return state;
-  }
-}
-
-export const Creators = {};
+export default createReducer(INITIAL_STATE, {});
